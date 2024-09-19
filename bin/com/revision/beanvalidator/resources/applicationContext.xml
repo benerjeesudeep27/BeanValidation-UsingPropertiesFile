@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean
+		class="com.revision.beanvalidator.validator.TeacherValidator"
+		id="tchValObj">
+		<property name="resource"
+			value="/com/revision/beanvalidator/resources/errors.properties"></property>
+	</bean>
+	<bean class="com.revision.beanvalidator.beans.Teacher"
+		id="teachObj">
+		<property name="name" value=""></property>
+		<property name="staffId" value="108"></property>
+		<property name="qualification" value="Bhagwan"></property>
+		<property name="phoneno" value="7018914822"></property>
+	</bean>
+
+</beans>
